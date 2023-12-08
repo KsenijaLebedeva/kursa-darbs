@@ -1,0 +1,493 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+         :root {
+            --color1: #ff7e7e;
+            --color2: #ffcfcf;
+            --color3: #6B1919;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h1>1. uzdevums</h1>
+            <div id="task">
+                <h3 class="task">Jūsu uzdevums ir atrast pogu "Join Us" un nospiest to!</h3>
+                <h3 class="task">Nospiediet pogu "Sākt", lai sāktu uzdevumu.</h3>
+                <button class="btn-default btn-lg" id="startButton">Sākt</button>
+            </div>
+
+            <div id="taskafter">
+                <h3 class="text-after">Uzdevums paveikts!</h3>
+                <h3 id="result"></h3>
+                <h3 class="text-after">Lūdzu, nokopējiet rezultātu un ievadiet to anketā!</h3>
+                <button id="copy" class="btn-default btn-lg" onclick="copyToClipboard()">Kopēt rezultātu</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="content">
+        <nav class="nav navbar">
+            <div class="top-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <div id="logo">
+                                <a href="">Logo</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-8 text-center menu-1">
+                            <ul>
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Contacts</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-2">
+                            <ul>
+                                <li class="btn-cta"><a href="#"><span>Login</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <header id="header" class="cover fullh">
+            <div class="container">
+                <div class="row fullh">
+                    <div class="col-md-8 col-md-offset-2 text-center fullh">
+                        <div class="fullh">
+                            <div class="header-content fullh">
+                                <h1>Lorem ipsum dolor sit amet consectetur adipiscing elit</h1>
+                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis cras sed felis eget.</h2>
+                                <p>
+                                    <a class="btn btn-primary btn-lg btn-second"></i>Contact Us</a> <a class="btn btn-primary btn-lg btn-learn">Learn More</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <div id="started">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center heading">
+                        <h2>Imperdiet Proin</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed blandit libero volutpat sed cras ornare arcu. Tincidunt arcu non sodales neque sodales ut etiam. Sollicitudin
+                            tempor id eu nisl. Vel quam elementum pulvinar etiam non quam lacus. In cursus turpis massa tincidunt dui ut ornare lectus sit. Turpis egestas pretium aenean pharetra magna ac. Feugiat in fermentum posuere urna. Purus viverra
+                            accumsan in nisl nisi scelerisque. Nam aliquam sem et tortor consequat id porta nibh. Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Sapien eget mi proin sed libero enim sed faucibus. Mi proin sed libero enim
+                            sed. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="blog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center heading">
+                        <h2>Suspendisse Sed</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare suspendisse sed nisi lacus sed.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="blog">
+                            <a href="#" class="blog-bg" style="background-image: url(images/portfolio-1.jpg);"></a>
+                            <div class="blog-text">
+                                <h3>Sed risus pretium quam</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt vitae semper quis lectus nulla at volutpat diam ut. Faucibus turpis in eu mi bibendum
+                                    neque egestas.</p>
+                                <ul class="read-more">
+                                    <li><a class="btn btn-primary btn-default" href="#">Read More</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="blog">
+                            <a href="#" class="blog-bg" style="background-image: url(images/portfolio-6.jpg);"></a>
+                            <div class="blog-text">
+                                <h3>Dignissim convallis aenean</h3>
+                                <p>Ut porttitor leo a diam sollicitudin tempor. Leo a diam sollicitudin tempor id eu nisl nunc. Sollicitudin aliquam ultrices sagittis orci. Vulputate sapien nec sagittis aliquam malesuada bibendum. Fringilla urna porttitor.
+                                </p>
+                                <ul class="read-more">
+                                    <li><a class="btn btn-primary btn-default" href="#">Read More</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="blog">
+                            <a href="#" class="blog-bg" style="background-image: url(images/portfolio-1.jpg);"></a>
+                            <div class="blog-text">
+                                <h3>Malesuada fames ac turpis</h3>
+                                <p>Lobortis elementum nibh tellus molestie nunc non blandit massa enim. Elit eget gravida cum sociis natoque penatibus et magnis. Molestie at elementum eu facilisis sed odio morbi quis commodo. Massa placerat duis ultricies.
+                                </p>
+                                <ul class="read-more">
+                                    <li><a class="btn btn-primary btn-default" href="#">Read More</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="started">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center heading">
+                        <h2>Vel Eros!</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id porta nibh venenatis cras sed felis eget velit. A diam sollicitudin tempor id. Eget nunc lobortis mattis
+                            aliquam faucibus purus in massa tempor. Turpis tincidunt id aliquet risus feugiat in ante metus dictum. </p>
+                        <p><a class="btn btn-default btn-lg">Contact Us</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center heading">
+                        <h2>Morbi Tempus</h2>
+                        <p>Sollicitudin ac orci phasellus egestas tellus, rutrum tellus pellentesque eu.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="portfolio">
+
+                            <div class="portfolio-entry" style="background-image: url(images/portfolio-1.jpg);"></div>
+                            <div class="portfolio-text">
+                                <h3>Posuere lorem ipsum dolor</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="portfolio">
+
+                            <div class="portfolio-entry" style="background-image: url(images/portfolio-6.jpg);"></div>
+                            <div class="portfolio-text">
+                                <h3>Sit amet mauris commodo</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="portfolio">
+
+                            <div class="portfolio-entry" style="background-image: url(images/portfolio-1.jpg);"></div>
+                            <div class="portfolio-text">
+                                <h3>Id velit ut tortor</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="portfolio">
+
+                            <div class="portfolio-entry" style="background-image: url(images/portfolio-6.jpg);"></div>
+                            <div class="portfolio-text">
+                                <h3>Id porta nibh venenatis</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="portfolio">
+
+                            <div class="portfolio-entry" style="background-image: url(images/portfolio-1.jpg);"></div>
+                            <div class="portfolio-text">
+                                <h3>Ornare arcu odio ut</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="portfolio">
+
+                            <div class="portfolio-entry" style="background-image: url(images/portfolio-6.jpg);"></div>
+                            <div class="portfolio-text">
+                                <h3>Eu turpis egestas pretium</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="features">
+            <div class="container">
+                <div class="services-padding">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="feature-left">
+                                <span class="icon">
+								<i class="icon-document"></i>
+							</span>
+                                <div class="feature-copy">
+                                    <h3>Elementum</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                    <p><a href="#">Learn More <i class="icon-arrow-right22"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="feature-left">
+                                <span class="icon">
+								<i class="icon-search"></i>
+							</span>
+                                <div class="feature-copy">
+                                    <h3>Aliquam</h3>
+                                    <p>Sagittis nisl rhoncus mattis rhoncus urna. Enim blandit volutpat maecenas volutpat blandit aliquam etiam erat velit.</p>
+                                    <p><a href="#">Learn More <i class="icon-arrow-right22"></i></a></p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature-left">
+                                <span class="icon">
+								<i class="icon-phone"></i>
+							</span>
+                                <div class="feature-copy">
+                                    <h3>Porttitor</h3>
+                                    <p> Ultrices eros in cursus turpis massa tincidunt dui ut. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim.</p>
+                                    <p><a href="#">Learn More <i class="icon-arrow-right22"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-4">
+
+                            <div class="feature-left">
+                                <span class="icon">
+								<i class="icon-basket"></i>
+							</span>
+                                <div class="feature-copy">
+                                    <h3>Sollicitudin</h3>
+                                    <p> Ac tortor dignissim convallis aenean et tortor at. Tristique senectus et netus et malesuada.</p>
+                                    <p><a href="#">Learn More <i class="icon-arrow-right22"></i></a></p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="feature-left">
+                                <span class="icon">
+								<i class="icon-pencil"></i>
+							</span>
+                                <div class="feature-copy">
+                                    <h3>Faucibus</h3>
+                                    <p>Porttitor eget dolor morbi non arcu risus quis. Laoreet id donec ultrices tincidunt arcu non sodales neque.</p>
+                                    <p><a href="#">Learn More <i class="icon-arrow-right22"></i></a></p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature-left">
+                                <span class="icon">
+								<i class="icon-chat"></i>
+							</span>
+                                <div class="feature-copy">
+                                    <h3>Consectetur</h3>
+                                    <p>Quisque egestas diam in arcu cursus euismod quis viverra. Consectetur adipiscing elit duis tristique sollicitudin.</p>
+                                    <p><a href="#">Learn More <i class="icon-arrow-right22"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="started">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center heading">
+                        <h2>Scelerisque In Dictum!</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed blandit libero volutpat sed cras ornare arcu. Tincidunt arcu non sodales neque sodales ut etiam. Sollicitudin
+                            tempor id eu nisl. </p>
+                    </div>
+                    <a class="col-md-offset-4 col-md-2 btn btn-default btn-lg btn-learn btn-first" href="#"></i>Learn more</a>
+                    <a id="end" class="col-md-2 ml-5 btn btn-default btn-lg btn-learn" href="#"></i>Join Us</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center heading">
+                    <h2>Contact Us</h2>
+                    <p>Ac turpis egestas maecenas pharetra convallis posuere morbi. Dictum fusce ut placerat orci nulla pellentesque dignissim enim.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-push-1">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <div class="form-group">
+                                <input type="submit" value="Send Message" class="btn btn-primary btn-lg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <footer id="footer" role="contentinfo">
+        <div class="container">
+            <div class="row copyright">
+                <div class="text-center">
+                    <p>
+                        <ul class="footer-links col-md-12 text-center">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </p>
+
+                    <p>
+                        <small class="block">&copy; 2023 Website. All Rights Reserved.</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+
+
+    <script>
+        var elapsedTime;
+        document.addEventListener("DOMContentLoaded", function() {
+            var modal = document.getElementById("modal");
+            var startButton = document.getElementById("startButton");
+            var endButton = document.getElementById("end");
+            var content = document.getElementById("content");
+            var task = document.getElementById("task");
+
+
+            // Show a modal when the page loads
+            modal.style.display = "flex";
+            taskafter.style.display = "none";
+
+            // Event for the "Start" button
+            startButton.addEventListener("click", function() {
+                // Close the modal
+                modal.style.display = "none";
+
+                // Showing page content
+                content.style.display = "block";
+
+                // Запускаем таймер
+                var startTime = new Date().getTime();
+
+                // Event for the "Join Us" button
+                endButton.style.display = "block";
+                endButton.addEventListener("click", function() {
+                    // Calculating time
+                    var endTime = new Date().getTime();
+                    elapsedTime = (endTime - startTime) / 1000;
+
+                    // Hiding page content
+                    content.style.display = "none";
+
+                    var resultMessage = "Jūsu rezultāts: " + elapsedTime + " sekundes";
+                    showModal(resultMessage);
+                });
+            });
+
+            // Function to display the result
+            function showModal(message) {
+                modal.style.display = "flex";
+                const result = document.getElementById("result");
+                result.textContent = `${message}`;
+                task.style.display = "none";
+                taskafter.style.display = "block";
+            }
+        });
+
+        function copyToClipboard() {
+            const textarea = document.createElement('textarea');
+            textarea.value = elapsedTime;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+        }
+    </script>
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Main -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
