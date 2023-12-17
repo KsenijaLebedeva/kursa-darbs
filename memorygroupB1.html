@@ -12,16 +12,21 @@
         input,
         .words {
             background: none;
-            color: white;
-            border: 2px solid #FFFF;
+            color: rgb(0, 0, 0);
+            border: 2px solid #000000;
             border-radius: 10px;
             padding: 10px;
             font-size: 25px;
         }
         
         body {
-            background-color: #ac8f00;
-            color: white;
+            background-color: rgb(238, 238, 77);
+            color: rgb(0, 0, 0);
+        }
+        
+        button {
+            color: #000000 !important;
+            border-color: #000000 !important;
         }
     </style>
 </head>
@@ -113,7 +118,7 @@
                     timer.style.display = "none";
                     wordList.style.display = "none";
                     game.style.display = "block";
-                    document.body.style.backgroundColor = "#ac8f00";
+                    document.body.style.backgroundColor = "rgb(238, 238, 77";
 
                 } else {
                     timerElement.textContent = `Atlikušais laiks: ${remainingTime}s`;
