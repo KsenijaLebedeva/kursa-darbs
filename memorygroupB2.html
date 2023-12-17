@@ -12,16 +12,31 @@
         input,
         .words {
             background: none;
-            color: white;
-            border: 2px solid #FFFF;
+            color: black;
+            border: 2px solid;
+            border-color: black;
             border-radius: 10px;
             padding: 10px;
             font-size: 25px;
         }
         
         body {
-            background-color: #ac8f00;
-            color: white;
+            background-color: rgb(238, 238, 77);
+            color: black;
+        }
+        
+        button {
+            color: black !important;
+            border-color: black !important;
+        }
+        
+        .white {
+            color: white !important;
+            border-color: white !important;
+        }
+        
+        .white:hover {
+            color: black !important;
         }
     </style>
 </head>
@@ -52,7 +67,7 @@
                 <h3 class="text-center mb-5">Ievadiet vārdus, kurus atceraties (vārdu secība nav svarīga)</h3>
                 <form id="wordForm" class="text-center">
                     <ul id="inputList" class="mb-5"></ul>
-                    <button class="submit btn btn-outline-light btn-lg" type="submit">Pārbaudīt</button>
+                    <button class="white submit btn btn-outline-light btn-lg" type="submit">Pārbaudīt</button>
                 </form>
             </div>
             <div id="text-after" style="display: none;">
@@ -114,6 +129,17 @@
                     wordList.style.display = "none";
                     game.style.display = "block";
                     document.body.style.backgroundColor = "#2a2a9a";
+                    const elements = document.querySelectorAll('*'); // Получаем все элементы на странице
+
+                    elements.forEach(element => {
+                        const computedStyles = getComputedStyle(element); // Получаем вычисленные стили элемента
+
+                        // Проверяем, если цвет текста или цвет рамки у элемента черный, меняем его на белый
+                        if (computedStyles.color === 'rgb(0, 0, 0)' || computedStyles.borderColor === 'rgb(0, 0, 0)' || element.tagName === 'BUTTON') {
+                            element.style.color = 'white';
+                            element.style.borderColor = 'white';
+                        }
+                    });
 
                 } else {
                     timerElement.textContent = `Atlikušais laiks: ${remainingTime}s`;
